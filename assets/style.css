@@ -1,0 +1,42 @@
+html {
+    scroll-behavior: smooth;
+}
+
+#sobre {
+    background-color: #2b2b2b !important;
+    height: auto;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(10, 8, 8);
+    padding: 1vh;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.887);
+}
+
+footer .copyright {
+    color: #8147f8;
+}
+
+/* body::-webkit-scrollbar-thumb {
+    background-color: rgb(101, 16, 240);
+} */
+
+body::-webkit-scrollbar {
+    width: 4px;
+  }
+  body {
+    scrollbar-width: thin;
+    scrollbar-color: #000;
+  }
+  body::-webkit-scrollbar-track {
+    background: #fff;
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(101, 16, 240) ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+  }
