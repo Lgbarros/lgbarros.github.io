@@ -1,0 +1,141 @@
+html {
+    scroll-behavior: smooth;
+}
+
+main {
+    background: #282a2d;
+    color: #fff;
+}
+
+#sobre {
+    padding: 5vh;
+    /* background-color: #2b2b2b !important; */
+}
+
+.intro-about-me::after {
+    content: '';
+    margin-top: 1vh;
+    height: 3px;
+    width: 5rem;
+    display: block;
+    margin-bottom: 0.5rem;
+    background-color: #8438ff;
+    -webkit-transition: .2s all ease-in;
+}
+
+.intro-about-me:hover:after {
+    width: 7rem;
+}
+
+.img-autor {
+    border-radius: 50%;
+    filter: drop-shadow(2px 4px 6px black);
+    transition: 1s;
+    border: 2px solid #6510f0;
+    box-shadow: 2px 7px #6510f0;
+}
+
+.img-autor:hover {
+    filter: drop-shadow(2px 4px 6px #000);
+    border: 2px solid #6510f0;
+    box-shadow: 10px 7px #888888;
+
+}
+
+
+
+.social a{
+    margin-top: 1.5vh;
+    list-style: none;
+    width: 60px;
+    height: 60px;
+    background: #fff;
+    border-radius: 15%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 10px -5px #ffffff1a;
+    transition: all 0.3s;
+    color: #8438ff;
+}
+
+.social a:hover{
+    filter: drop-shadow(2px 4px 6px #000);
+    background-color: #ffffffbf;
+}
+
+.linkedin{
+    color: #0072b1;
+}
+
+.instagram{
+    color: #5B51D8;
+}
+
+.email {
+    color: #c8232c;
+}
+
+.github {
+    color: #010409;
+}
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0e1013;
+    padding: 1vh;
+    border-top: 0.1rem solid rgba(0, 0, 0, 0.887);
+}
+
+footer .copyright {
+    color: #b0b2b3;
+}
+
+/* body::-webkit-scrollbar-thumb {
+    background-color: rgb(101, 16, 240);
+} */
+
+body::-webkit-scrollbar {
+    width: 4px;
+}
+
+body {
+    scrollbar-width: thin;
+    scrollbar-color: #000;
+    font-family: 'Raleway';font-size: 22px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #6510f0 ;
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+.custom-shape-divider-bottom-1705022226 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1705022226 svg {
+    position: relative;
+    display: block;
+    width: calc(118% + 1.3px);
+    height: 15px;
+}
+
+.custom-shape-divider-bottom-1705022226 .shape-fill {
+    fill: #282A2D;
+}
