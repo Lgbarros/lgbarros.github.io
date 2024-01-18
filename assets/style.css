@@ -132,12 +132,29 @@ section {
 
 /* PARTNERS */
 
-#partnes figure {
+#partners figure {
   -webkit-transition: .2s all ease-in;
+  filter: drop-shadow(2px 4px 6px black);
 }
 
-#partnes figure:hover {
+#partners figure:hover {
   transform: scale(1.1);
+}
+
+#partners h2, #projects h2{
+  margin-bottom: 5vh;
+}
+
+/* .nav-tabs {
+  background-color: #6510f0 !important;
+} */
+
+#tribox-tab, #freelance-tab, #study-tab {
+  color: white;
+}
+
+.active {
+  color: #000 !important;
 }
 
 /* FOOTER */ 
@@ -149,7 +166,7 @@ footer {
   align-items: center;
   background: #0e1013;
   padding: 1vh;
-s  border-top: 0.1rem solid rgba(0, 0, 0, 0.887);
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.887);
 }
 
 footer .copyright {
@@ -373,3 +390,4 @@ time {
     transform: translateX(-50%) scale(1);
   }
 }
+
