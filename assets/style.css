@@ -2,6 +2,7 @@
 
 html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
 }
 
 main {
@@ -13,6 +14,8 @@ span {
   font-size: 1rem;
   font-weight: 400;
 }
+
+
 
 h2 {
   padding-bottom: 
@@ -116,29 +119,40 @@ section {
 /* ABOUT */
 
 #career .btn-outline-primary ,#about .btn-outline-primary {
-  color: black !important;
-  background-color: #c5c4c4;
-  border: 1px solid #c5c4c4 !important;
+  color: #fff !important;
+  background-color: #6510f0;
+  border: 1px solid #6510f0 !important;
   width: 80%;
 }
 
 #career .btn-outline-primary:hover ,#about .btn-outline-primary:hover {
-  color: white !important;
-  background-color: #6510f0 !important;
-  border: 1px solid #6510f0 !important;
+  color: #000 !important;
+  background-color: #c5c4c4 !important;
+  border: 1px solid #c5c4c4 !important;
   filter: drop-shadow(2px 4px 6px #000);
   width: 80%;
+}
+
+.fixed-top {
+  top: -40px !important;
+  transform: translateY(40px) !important;
+  transition: transform .3s !important;
+  background: rgba(19, 16, 16, 0.521) !important;
+  box-shadow: 0 1px 5px 0 rgba(255, 255, 255, 0.767);
+  backdrop-filter: blur( 5px );
+  -webkit-backdrop-filter: blur( 5px );
 }
 
 /* PARTNERS */
 
 #partners figure {
   -webkit-transition: .2s all ease-in;
-  filter: drop-shadow(2px 4px 6px black);
+  filter: drop-shadow(2px 4px 6px rgb(85, 85, 85));
 }
 
 #partners figure:hover {
   transform: scale(1.1);
+  filter: drop-shadow(2px 4px 3px #b4b3b6);
 }
 
 #partners h2, #projects h2{
@@ -146,15 +160,44 @@ section {
 }
 
 /* .nav-tabs {
-  background-color: #6510f0 !important;
 } */
 
 #tribox-tab, #freelance-tab, #study-tab {
-  color: white;
+  color: #000;
+  background-color: #c5c4c4;
+  border: 1px solid #c5c4c4;
+  width: 100%;
 }
 
-.active {
-  color: #000 !important;
+#projects .nav-link {
+  color: #000;
+  background-color: #c5c4c4;
+  border: 1px solid #c5c4c4;
+  width: 400px;
+  font-size: 1.25rem;
+}
+
+#projects .nav-link:hover {
+  color: #fff !important;
+  background-color: #6510f0 !important;
+  border: 1px solid #6510f0 !important;
+  filter: drop-shadow(2px 4px 6px #000);
+  width: 400px;
+  font-size: 1.25rem;
+}
+
+hr {
+  height: 2px;
+  background-image: linear-gradient(to right, #ccc0, #ffffff, #ccc0);
+  display: flex;
+  width: 97%;
+  border: none !important;
+  align-items: center;
+  margin: 2vh !important;
+}
+
+hr:hover {
+
 }
 
 /* FOOTER */ 
@@ -167,6 +210,27 @@ footer {
   background: #0e1013;
   padding: 1vh;
   border-top: 0.1rem solid rgba(0, 0, 0, 0.887);
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: none;
+  background-color: #6510f0 !important;
+  border: 1px solid #6510f0 !important;
+  -webkit-transition: .2s all ease-in;
+}
+
+#btn-back-to-top:hover {
+  filter: drop-shadow(2px 4px 6px #000);
+  transition: 1s;
+}
+
+#btn-back-to-top i:hover {
+  padding-top: 1;
+  position: relative;
+  top:-5px;
 }
 
 footer .copyright {
