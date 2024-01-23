@@ -1,11 +1,10 @@
+// TIMELINE //
 (function () {
     "use strict";
   
     // define variables
     var items = document.querySelectorAll(".timeline li");
   
-    // check if an element is in viewport
-    // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
     function isElementInViewport(el) {
       var rect = el.getBoundingClientRect();
       return (
@@ -31,6 +30,8 @@
     window.addEventListener("scroll", callbackFunc);
   })();
 
+// FIXED MENU WHEN SCROLL //
+
   document.addEventListener("DOMContentLoaded", function(){
 		
 		window.addEventListener('scroll', function() {
@@ -49,31 +50,31 @@
 			} 
 		});
 	}); 
-	// DOMContentLoaded  end
 
-
-  //Get the button
-let mybutton = document.getElementById("btn-back-to-top");
-
-// When the user scrolls down 20px from the top of the document, show the button
-window.onscroll = function () {
-  scrollFunction();
-};
-
-function scrollFunction() {
-  if (
-    document.body.scrollTop > 20 ||
-    document.documentElement.scrollTop > 20
-  ) {
-    mybutton.style.display = "block";
+//  Scroll to Top //
+$(window).scroll(function() {
+  if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+      $('#return-to-top').fadeIn(200);    // Fade in the arrow
   } else {
-    mybutton.style.display = "none";
+      $('#return-to-top').fadeOut(200);   // Else fade out the arrow
   }
-}
-// When the user clicks on the button, scroll to the top of the document
-mybutton.addEventListener("click", backToTop);
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+  $('body,html').animate({
+      scrollTop : 0                       // Scroll to top of body
+  }, 100);
+});
 
-function backToTop() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+// FIX ACTIVE MENU WHEN CLICK//
+
+$(".nav-link").on("click", function(){
+	$(".nav-link.active").removeClass("active");
+	$(this).addClass("active");
+});
+
+new Typed('#typed',{
+  strings : ['Front-End Developer.','WordPress Developer.', 'E-Commerce Management.', 'Client Support.'],
+  typeSpeed : 40,
+  delaySpeed : 200,
+  loop : true
+});

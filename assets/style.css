@@ -15,7 +15,9 @@ span {
   font-weight: 400;
 }
 
-
+#typed {
+  font-size: 2rem;
+}
 
 h2 {
   padding-bottom: 
@@ -212,26 +214,49 @@ footer {
   border-top: 0.1rem solid rgba(0, 0, 0, 0.887);
 }
 
-#btn-back-to-top {
+#return-to-top {
   position: fixed;
   bottom: 20px;
   left: 20px;
+  background: rgb(0, 0, 0);
+  background: #6510f0;
+  width: 50px;
+  height: 50px;
+  display: block;
+  text-decoration: none;
+  -webkit-border-radius: 35px;
+  -moz-border-radius: 35px;
+  border-radius: 35px;
   display: none;
-  background-color: #6510f0 !important;
-  border: 1px solid #6510f0 !important;
-  -webkit-transition: .2s all ease-in;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  filter: drop-shadow(2px 2px 3px black);
 }
 
-#btn-back-to-top:hover {
-  filter: drop-shadow(2px 4px 6px #000);
-  transition: 1s;
-}
-
-#btn-back-to-top i:hover {
-  padding-top: 1;
+#return-to-top i {
+  color: #fff;
+  margin: 0;
   position: relative;
-  top:-5px;
+  left: 13px;
+  top: 12px;
+  font-size: 25px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
+#return-to-top:hover {
+  background: #6510f0d4;
+}
+#return-to-top:hover i {
+  color: #fff;
+  top: 5px;
+}
+
 
 footer .copyright {
     color: #b0b2b3;
