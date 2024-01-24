@@ -47,6 +47,10 @@ body::-webkit-scrollbar-thumb {
 
 /* INTRO */
 
+.logo img{
+  max-width: 50%;;
+}
+
 section {
     padding: 5vh;
 }
@@ -404,11 +408,15 @@ time {
 }
 
 @media screen and (max-width: 600px) {
+  img {
+    max-width: 100% !important;
+  }
+
   .timeline ul li {
     margin-left: 20px;
   }
   .timeline ul li div {
-    width: calc(100vw - 91px);
+    width: calc(100vw - 130px);
   }
   .timeline ul li:nth-child(even) div {
     left: 45px;

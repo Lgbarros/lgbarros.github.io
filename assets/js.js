@@ -51,7 +51,7 @@
 		});
 	}); 
 
-//  Scroll to Top //
+//  SCROLL TO TOP //
 $(window).scroll(function() {
   if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
       $('#return-to-top').fadeIn(200);    // Fade in the arrow
@@ -65,15 +65,26 @@ $('#return-to-top').click(function() {      // When arrow is clicked
   }, 100);
 });
 
-// FIX ACTIVE MENU WHEN CLICK//
+// SCROLL TO TOP WHEN CLICK ON LOGO //
+
+var btn = $('#logo-click');
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, '300');
+});
+
+// FIX ACTIVE MENU WHEN CLICK //
 
 $(".nav-link").on("click", function(){
 	$(".nav-link.active").removeClass("active");
 	$(this).addClass("active");
 });
 
+// TYPED EFFECT //
+
 new Typed('#typed',{
-  strings : ['Front-End Developer.','WordPress Developer.', 'E-Commerce Management.', 'Client Support.'],
+  strings : ['Front-End Developer.','WordPress Developer.', 'E-Commerce Management.', 'Support Client.'],
   typeSpeed : 40,
   delaySpeed : 200,
   loop : true
