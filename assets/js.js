@@ -89,3 +89,7 @@ new Typed('#typed',{
   delaySpeed : 200,
   loop : true
 });
+
+// INIT AOS ANIMATE CSS //
+
+AOS.init();

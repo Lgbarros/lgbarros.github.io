@@ -31,6 +31,11 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css"
         integrity="sha512-dPXYcDub/aeb08c63jRq/k6GaKccl256JQy/AnOq7CAnEZ9FzSL9wSbcZkMp4R26vBsMLFYH4kQ67/bbV8XaCQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ANIMATION AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body data-bs-spy="scroll" data-bs-target=".navbar-nav" data-bs-offset="50">
@@ -63,15 +68,15 @@
                             <a class="nav-link" href="#partners">Parceiros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects">Projetos</a>
+                            <a class="nav-link" href="#">Projetos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contato">Contato</a>
+                            <a class="nav-link" href="#">Contato</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://github.com/lgbarros" target="_blank"><i class="bi bi-github mx-2"></i></a>
+                        <li class="nav-item d-flex align-items-center">
+                            <a class="nav-link" href="https://github.com/lgbarros" target="_blank"><i class="bi bi-github"></i></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item d-flex align-items-center">
                             <a class="nav-link" href="https://www.linkedin.com/in/lucas-almeida-barros/" target="_blank"><i class="bi bi-linkedin"></i></a>
                         </li>
                     </ul>
@@ -87,28 +92,32 @@
                     <div class="col-12 col-lg-6 mb-3">
                         <article class="pe-lg-5">
                             <header>
+
                                 <span class="intro-about-me" style="letter-spacing: 5px;">Olá! Me chamo </span>
 
-                                <h1 class="fw-bolder text-uppercase py-3">Lucas Gabriel de Almeida Barros</h1>
+                                <h1 class="fw-bolder text-uppercase py-3 area-2" data-aos="fade-right">Lucas Gabriel de Almeida Barros</h1>
 
-                                <span id="typed"></span>
+                                <span id="typed" data-aos="fade-right"></span>
 
                                 <br><br>
                             </header>
 
                             <div class="social d-flex gap-4">
-                                <a href="https://www.linkedin.com/in/lucas-almeida-barros/"
-                                    title="Linkedin Lucas Barros" target="_blank"><i
-                                        class="bi bi-linkedin fs-2 linkedin"></i></a>
+                                <a href="https://www.linkedin.com/in/lucas-almeida-barros/" data-aos="fade-up" title="Linkedin Lucas Barros" target="_blank">
+                                    <i class="bi bi-linkedin fs-2 linkedin"></i>
+                                </a>
 
-                                <a href="https://github.com/lgbarros" title="GitHub Lucas Barros" target="_blank"><i
-                                        class="bi bi-github fs-2 github"></i></a>
+                                <a href="https://github.com/lgbarros" data-aos="fade-up" data-aos-delay="50" title="GitHub Lucas Barros" target="_blank">
+                                    <i class="bi bi-github fs-2 github"></i>
+                                </a>
 
-                                <a href="mailto:lucasg.barros.94@gmail.com" title="E-Mail Lucas Barros"
-                                    target="_blank"><i class="bi bi-envelope fs-2 email"></i></a>
+                                <a  href="mailto:lucasg.barros.94@gmail.com" data-aos="fade-up" data-aos-delay="100" title="E-Mail Lucas Barros" target="_blank">
+                                    <i class="bi bi-envelope fs-2 email"></i>
+                                </a>
 
-                                <a href="https://www.instagram.com/lgbarross/" title="Instagram Lucas Barros"
-                                    target="_blank"><i class="bi bi-instagram fs-2 instagram"></i></a>
+                                <a  href="https://www.instagram.com/lgbarross/" data-aos="fade-up" data-aos-delay="150" title="Instagram Lucas Barros" target="_blank">
+                                    <i class="bi bi-instagram fs-2 instagram"></i>
+                                </a>
                             </div>
                         </article>
                     </div>
@@ -116,7 +125,7 @@
                     <div class="col-12 col-lg-6 mb-3 d-flex justify-content-center">
                         <aside>
                             <figure>
-                                <img loading="lazy" class="rounded-circle img-autor" src="./img/autor.webp" alt="">
+                                <img loading="lazy" data-aos="fade-left" class="rounded-circle img-autor" src="./img/autor.webp" alt="">
                             </figure>
                         </aside>
                     </div>
@@ -127,13 +136,13 @@
         <section id="about">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col">
-                        <figure>
+                    <div class="col-sm">
+                        <figure data-aos="fade-right">
                             <img class="rounded-4" src="./img/about-image.svg" height="300" style="transform: scaleX(-1);">
                         </figure>
                     </div>
-                    <div class="col">
-                        <article class="text-end">
+                    <div class="col-sm">
+                        <article class="text-end" data-aos="fade-left">
                             <p>
                                 Tenho 30 anos e atualmente moro na cidade de Jaú, no interior de São Paulo.
                             </p>
@@ -250,7 +259,7 @@
                         </li>
                     </ul>
 
-                    <div class="d-grid col-14 d-md-flex justify-content-center">
+                    <div class="d-md-flex justify-content-center">
                         <button type="button"
                             onclick="window.open('https://drive.google.com/file/d/1QW5yEcx3NrYEGzdRrE_cMfZbFYZhAYjN/view?usp=sharing','_blank')"
                             class="btn btn-outline-primary btn-lg" title="Botão para visualização de Currículo"
@@ -268,24 +277,24 @@
 
                     <div class="col">
                         <figure>
-                            <img class="rounded-4" src="./img/partners/henrique-celulares.webp">
+                            <img class="rounded-4" data-aos="fade-up" class="area-2 aos-init aos-animate" src="./img/partners/henrique-celulares.webp">
                             <!-- Henrique Celulares -->
                         </figure>
                     </div>
                     <div class="col">
                         <figure>
-                            <img class="rounded-4" src="./img/partners/jorge-henrique-treinador.webp">
+                            <img class="rounded-4" data-aos="fade-up" class="area-2 aos-init aos-animate" data-aos-delay="150" src="./img/partners/jorge-henrique-treinador.webp">
                             <!-- Jorge Henrique Treinador -->
                         </figure>
                     </div>
                     <div class="col">
                         <figure>
-                            <img class="rounded-4" src="./img/partners/leds.webp"> <!-- LEDS -->
+                            <img class="rounded-4" data-aos="fade-up" class="area-2 aos-init aos-animate" data-aos-delay="250" src="./img/partners/leds.webp"> <!-- LEDS -->
                         </figure>
                     </div>
                     <div class="col">
                         <figure>
-                            <img class="rounded-4" src="./img/partners/luiza-novoletto.webp"> <!-- Luiza Novoletto -->
+                            <img class="rounded-4" data-aos="fade-up" class="area-2 aos-init aos-animate" data-aos-delay="350" src="./img/partners/luiza-novoletto.webp"> <!-- Luiza Novoletto -->
                         </figure>
                     </div>
                 </div>
@@ -295,102 +304,25 @@
                 <div class="row d-flex align-items-center justify-content-center text-center">
                     <div class="col">
                         <figure>
-                            <img class="rounded-4" src="./img/partners/no-mundo-com-mochilas.webp">
+                            <img class="rounded-4" data-aos="fade-up" class="area-2 aos-init aos-animate" data-aos-delay="450" src="./img/partners/no-mundo-com-mochilas.webp">
                             <!-- No Mundo Com Mochilas -->
                         </figure>
                     </div>
                     <div class="col">
                         <figure>
-                            <img class="rounded-4" src="./img/partners/sos-focinho-carente.webp">
+                            <img class="rounded-4" data-aos="fade-up" class="area-2 aos-init aos-animate" data-aos-delay="550" src="./img/partners/sos-focinho-carente.webp">
                             <!-- SOS Focinho Carente -->
                         </figure>
                     </div>
                     <div class="col">
                         <figure>
-                            <img class="rounded-4" src="./img/partners/best-center-tecnologia.webp"> <!-- Best Center Tecnologia -->
+                            <img class="rounded-4" data-aos="fade-up" class="area-2 aos-init aos-animate" data-aos-delay="650" src="./img/partners/best-center-tecnologia.webp"> <!-- Best Center Tecnologia -->
                         </figure>
                     </div>
                     <div class="col">
                         <figure>
-                            <img class="rounded-4" src="./img/partners/collabee.webp"> <!-- Collabee -->
+                            <img class="rounded-4" data-aos="fade-up" class="area-2 aos-init aos-animate" data-aos-delay="750" src="./img/partners/collabee.webp"> <!-- Collabee -->
                         </figure>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <div class="container">
-                <h2 class="text-center">Projetos</h2>
-
-                <ul class="nav nav-pills d-flex justify-content-around gap-3" id="myTab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="tribox-tab" data-bs-toggle="tab"
-                            data-bs-target="#tribox-tab-pane" type="button" role="tab" aria-controls="tribox-tab-pane"
-                            aria-selected="true">Tribox Internet</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="freelance-tab" data-bs-toggle="tab"
-                            data-bs-target="#freelance-tab-pane" type="button" role="tab"
-                            aria-controls="profile-tab-pane" aria-selected="false">Freelances</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="study-tab" data-bs-toggle="tab" data-bs-target="#study-tab-pane"
-                            type="button" role="tab" aria-controls="contact-tab-pane"
-                            aria-selected="false">Estudos</button>
-                    </li>
-                </ul>
-
-                <hr>
-
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="tribox-tab-pane" role="tabpanel"
-                        aria-labelledby="tribox-tab" tabindex="0">
-                        <div class="row d-flex align-items-center justify-content-center text-center">
-                            <div class="col">
-                                <figure>
-                                    <img class="rounded-4" src="https://fakeimg.pl/400x400/"> <!-- Zilio Alimentos -->
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- <div class="row d-flex align-items-center justify-content-center text-center">
-                            <div class="col">
-                                <figure>
-                                    <img class="rounded-4" src="https://fakeimg.pl/400x400/">
-                                </figure>
-                            </div>
-                        </div> -->
-                    </div>
-
-                    <div class="tab-pane fade" id="freelance-tab-pane" role="tabpanel" aria-labelledby="freelance-tab"
-                        tabindex="0">
-                        <div class="row d-flex align-items-center justify-content-center text-center">
-                            <div class="col">
-                                <figure>
-                                    <img class="rounded-4" src="https://fakeimg.pl/400x400/">
-                                </figure>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="tab-pane fade" id="study-tab-pane" role="tabpanel" aria-labelledby="study-tab"
-                        tabindex="0">
-                        <div class="row d-flex align-items-center justify-content-center text-center">
-                            <div class="col">
-                                <figure>
-                                    <img class="rounded-4" src="https://fakeimg.pl/400x400/">
-                                </figure>
-                            </div>
-                        </div>
-
-                        <!-- <div class="row d-flex align-items-center justify-content-center text-center">
-                            <div class="col">
-                                <figure>
-                                    <img class="rounded-4" src="https://fakeimg.pl/400x400/"> 
-                                </figure>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -398,17 +330,16 @@
     </main>
 
     <footer>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-        <a href="javascript:" id="return-to-top"><i class="bi bi-arrow-up-short"></i></a>
-
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
-
         <div class="copyright">©
             <script>document.write(new Date().getFullYear());</script> Todos os direitos reservados - Lucas Gabriel de
             Almeida Barros
         </div>
+
+        <a href="javascript:" id="return-to-top"><i class="bi bi-arrow-up-short"></i></a>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.8/typed.min.js"></script>
 
         <script src="./assets/js.js"></script>
 

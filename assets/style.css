@@ -165,47 +165,6 @@ section {
   margin-bottom: 5vh;
 }
 
-/* .nav-tabs {
-} */
-
-#tribox-tab, #freelance-tab, #study-tab {
-  color: #000;
-  background-color: #c5c4c4;
-  border: 1px solid #c5c4c4;
-  width: 100%;
-}
-
-#projects .nav-link {
-  color: #000;
-  background-color: #c5c4c4;
-  border: 1px solid #c5c4c4;
-  width: 400px;
-  font-size: 1.25rem;
-}
-
-#projects .nav-link:hover {
-  color: #fff !important;
-  background-color: #6510f0 !important;
-  border: 1px solid #6510f0 !important;
-  filter: drop-shadow(2px 4px 6px #000);
-  width: 400px;
-  font-size: 1.25rem;
-}
-
-hr {
-  height: 2px;
-  background-image: linear-gradient(to right, #ccc0, #ffffff, #ccc0);
-  display: flex;
-  width: 97%;
-  border: none !important;
-  align-items: center;
-  margin: 2vh !important;
-}
-
-hr:hover {
-
-}
-
 /* FOOTER */ 
 
 footer {
@@ -408,15 +367,75 @@ time {
 }
 
 @media screen and (max-width: 600px) {
-  img {
-    max-width: 100% !important;
+  body {
+    max-width: 100%;
+  }
+
+  #logo-click {
+    width: 85%;
+  }
+
+  #intro {
+    padding-bottom: 0vh;
+  }
+
+  #intro img{
+    max-width: 100%;
+    margin-top: 15%;
+  }
+
+  #about {
+    padding: 1vh;
+  }
+
+  #about article {
+    text-align: justify !important;
+  }
+
+  #about img {
+    max-width: 100%;
+  }
+
+  #about .btn-outline-primary {
+    width: 100%;
+  }
+
+  .intro-about-me::after {
+    margin: 0 auto;
+    margin-top: 3%;
+  }
+
+  .intro-about-me:hover:after{
+    width: 10rem;
+  }
+
+  #typed {
+    display: block;
+    height: 100px;
+  }
+
+  #career {
+    padding: 1vh;
+    padding-top: 5vh;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  #return-to-top i{
+    left: 0px;
+  }
+
+  .copyright {
+    width: 70%;
   }
 
   .timeline ul li {
     margin-left: 20px;
   }
   .timeline ul li div {
-    width: calc(100vw - 130px);
+    width: calc(100vw - 95px);
   }
   .timeline ul li:nth-child(even) div {
     left: 45px;
@@ -424,7 +443,7 @@ time {
   .timeline ul li:nth-child(even) div::before {
     left: -15px;
     border-width: 8px 16px 8px 0;
-    border-color: transparent #f45b69 transparent transparent;
+    border-color: transparent #6510f0 transparent transparent;
   }
 }
 
