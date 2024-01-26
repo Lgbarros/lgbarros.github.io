@@ -391,6 +391,24 @@ time {
     left: -289px;
     /*250+45-6*/
   }
+  .img-autor img {
+    max-width: 80% !important;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  .img-autor {
+    max-width: 75% !important;
+  }
+  .custom-shape-divider-bottom-1706146770 {
+    margin-bottom: -5px;
+  }
+  #certificate {
+    height: auto;
+  }
+  #partners {
+    height: 90vh;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -404,6 +422,7 @@ time {
 
   #intro {
     padding-bottom: 5vh;
+    height: auto;
   }
 
   #intro img{
