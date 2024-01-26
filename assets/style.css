@@ -32,7 +32,8 @@ h2 {
 /* SCROLLBAR */
 
 body::-webkit-scrollbar {
-  width: 4px;
+  width: 5px;
+  height: 5px;
 }
 
 body {
