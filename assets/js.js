@@ -35,7 +35,7 @@
   document.addEventListener("DOMContentLoaded", function(){
 		
 		window.addEventListener('scroll', function() {
-	       
+
 			if (window.scrollY > 200) {
 				document.getElementById('navbar_top').classList.add('fixed-top');
         document.getElementById('navbar_top').classList.remove('bg-dark');
@@ -50,6 +50,99 @@
 			} 
 		});
 	}); 
+
+  //PARTE NOVA 2024
+
+$.fn.isInViewport = function () {
+  var elementTop = $(this).offset().top;
+  var elementBottom = elementTop + $(this).outerHeight();
+
+  var viewportTop = $(window).scrollTop();
+  var viewportBottom = viewportTop + $(window).height();
+
+  return elementBottom > viewportTop && elementTop < viewportBottom;
+};
+
+
+refreshNav = () => {
+
+  //pega todos os a.nav-link dentro da div#navbarTogglerDemo03, remove a classe active
+  var navLinks = document.querySelectorAll('#navbarTogglerDemo03 a.nav-link');
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+  });
+
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+
+  window.addEventListener('scroll', function () {
+
+    if (window.scrollY < 1350){
+
+     //refreshNav();
+
+      //pega o a com href href="#career"
+      var intro = document.querySelector('a[href*="#intro"]');
+
+      //coloca a classe active
+      intro.classList.add("active");
+
+      //esconde o a href #about
+      var about = document.querySelector('a[href*="#about"]');
+      about.classList.remove("active");
+
+    }
+
+    if (window.scrollY > 1350 && window.scrollY < 2483) {
+
+      refreshNav();
+
+      //pega o a com href href="#career"
+      var career = document.querySelector('a[href*="#career"]');
+
+      //coloca a classe active
+      career.classList.add("active");
+
+      //esconde o a href #about
+      var about = document.querySelector('a[href*="#about"]');
+      about.classList.remove("active");
+
+
+    }
+
+    // se o a[href*="#about"] estiver visível, roda refreshNav() + aplica active nele
+    // usa is visible do jquery
+
+
+    if (  $("#about").isInViewport()  && window.scrollY > 500) {
+
+      refreshNav();
+
+      //pega o a com href href="#about"
+      var about = document.querySelector('a[href*="#about"]');
+
+      //coloca a classe active
+      about.classList.add("active");
+
+    }
+ 
+
+   
+
+
+    
+  });
+
+
+}); 
+
+//FIM PARTE NOVA 2024
+
+
+
+
 
 //  SCROLL TO TOP //
 $(window).scroll(function() {
