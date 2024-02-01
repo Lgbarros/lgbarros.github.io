@@ -51,7 +51,7 @@
 		});
 	}); 
 
-  //PARTE NOVA 2024
+//PARTE NOVA 2024
 
 $.fn.isInViewport = function () {
   var elementTop = $(this).offset().top;

@@ -167,8 +167,47 @@ section {
 /* CERTIFICATE */
 
 #certificate {
-  height: 70vh;
+  height: auto;
+}
+
+.accordion-item {
+  background-color: #282a2d !important;
+  color: white !important;
+}
+
+#certificate {
   background-color: #141414;
+}
+
+#certificate i {
+  color: #f64682;
+}
+
+.accordion-button {
+  background-color: #141414 !important;
+    color: white !important;
+}
+
+.accordion-button.collapsed {
+  background-color: #282a2d;
+    color: white;
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: contrast(0);
+}
+
+.accordion-button::after {
+  filter: contrast(0);
+}
+
+.accordion-item:first-of-type .accordion-button {
+  
+}
+
+#panelsStayOpen-collapseTwo, #panelsStayOpen-collapseThree, #panelsStayOpen-collapseFour, #panelsStayOpen-collapseFive {
+  background-color: #282a2d;
+  color: white;
 }
 
 /* PARTNERS */
@@ -189,7 +228,7 @@ section {
   filter: drop-shadow(2px 4px 3px #b4b3b6);
 }
 
-#partners h2, #projects h2{
+#partners h2, #projects h2, #certificate h2{
   margin-bottom: 5vh;
 }
 
