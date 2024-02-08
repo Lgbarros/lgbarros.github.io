@@ -112,6 +112,47 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
+    
+    if (  window.scrollY > 3154 && window.scrollY < 3728 ) {
+
+      refreshNav();
+
+      //pega o a com href href="#career"
+      var career = document.querySelector('a[href*="#career"]');
+
+      //coloca a classe active
+      career.classList.remove("active");
+
+      //pega o a com href href="#certificate"
+      var certificate = document.querySelector('a[href*="#certificate"]');
+
+      //coloca a classe active
+      certificate.classList.add("active");
+
+    }
+
+
+    //maior que window.scrollY 3728, ativa o partners
+    if (  window.scrollY > 3728) {
+
+      refreshNav();
+
+      //pega o a com href href="#certificate"
+      var certificate = document.querySelector('a[href*="#certificate"]');
+
+      //coloca a classe active
+      certificate.classList.remove("active");
+
+      //pega o a com href href="#partners"
+      var partners = document.querySelector('a[href*="#partners"]');
+
+      //coloca a classe active
+      partners.classList.add("active");
+
+    }
+
+
+
     // se o a[href*="#about"] estiver visível, roda refreshNav() + aplica active nele
     // usa is visible do jquery
 
@@ -173,6 +214,19 @@ $(".nav-link").on("click", function(){
 	$(".nav-link.active").removeClass("active");
 	$(this).addClass("active");
 });
+
+
+//nav-link out-link
+$(".nav-link.out-link").on("click", function(){
+  
+   setTimeout(() => {
+    
+    $(".nav-link.out-link").removeClass("active"); //depois de 1 segundo remove a classe active
+
+   }, 1000);
+
+});
+
 
 // TYPED EFFECT //
 
